@@ -6,10 +6,17 @@ body {
 }
 
 #app {
-    width: 100%;
+    width: 100wh;
     height: 100vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px ridge #7c0000
+}
+#pixi-container {
+    border: 2px ridge #9b00a3
+}
+#next-piece {
+    border: 2px ridge #006086
 }
