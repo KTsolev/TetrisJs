@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixie UI Navigation Menu</title>
+  
+  <!-- Pixel Font (Retro gaming style) -->
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <style>
+    /* Pixie UI Theme & Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Press Start 2P', monospace;
+    }
+
+    body {
+      background-color: #1a1025; /* Deep 8-bit purple */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Pixie Canvas Container */
+    .menu-container {
+      background: #2d1b4e;
+      padding: 24px;
+      width: 320px;
+      
+      /* Pixie Double-Border Effect */
+      border: 4px solid #000000;
+      box-shadow: 
+        inset 4px 4px 0px #ff79c6, 
+        inset -4px -4px 0px #bd93f9,
+        0px 12px 0px rgba(0, 0, 0, 0.4);
+      
+      position: relative;
+    }
+
+    /* Pixie Menu Header */
+    .menu-title {
+      color: #50fa7b; /* Retro Green */
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-shadow: 3px 3px 0px #000;
+    }
+
+    /* Menu Item List */
+    .menu-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    /* Individual Pixie Buttons */
+    .menu-item a {
+      display: block;
+      text-decoration: none;
+      color: #f8f8f2;
+      font-size: 16px;
+      padding: 22px 16px;
+      text-align: center;
+      background: #44475a;
+      
+      /* Pure CSS Pixel Border */
+      border: 4px solid #000;
+      box-shadow: inset -4px -4px 0px #282a36;
+      
+      position: relative;
+      cursor: pointer;
+      user-select: none;
+      transition: transform 0.1s ease;
+    }
+
+    /* Pixie Hover State (Chunky Feedback) */
+    .menu-item a:hover {
+      background: #ffb86c; /* Bright retro orange */
+      color: #000;
+      box-shadow: inset -4px -4px 0px #ff5555;
+    }
+
+    /* Pixie Clicked / Active State (Pushed Down Effect) */
+    .menu-item a:active {
+      transform: translateY(4px);
+      box-shadow: inset 4px 4px 0px #ff5555;
+    }
+
+    /* Optional: Retro Arrow Indicator on Hover */
+    .menu-item a:hover::before {
+      content: ">";
+      position: absolute;
+      left: 12px;
+      font-size: 14px;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Pixie UI Menu Component -->
+  <div class="menu-container">
+    <h1 class="menu-title">Main Menu</h1>
+    
+    <ul class="menu-list">
+      <li class="menu-item"><a href="#start">Start Game</a></li>
+      <li class="menu-item"><a href="#load">Best scores</a></li>
+      <li class="menu-item"><a href="#options">Options</a></li>
+      <li class="menu-item"><a href="#quit">Quit to Desktop</a></li>
+    </ul>
+  </div>
+
+</body>
+</html>
