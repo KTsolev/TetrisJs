@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pixie UI Navigation Menu</title>
-  
+
   <!-- Pixel Font (Retro gaming style) -->
   <link rel="preconnect" href="https://googleapis.com">
   <link rel="preconnect" href="https://gstatic.com" crossorigin>
@@ -20,7 +21,8 @@
     }
 
     body {
-      background-color: #1a1025; /* Deep 8-bit purple */
+      background-color: #1a1025;
+      /* Deep 8-bit purple */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -33,20 +35,21 @@
       background: #2d1b4e;
       padding: 24px;
       width: 320px;
-      
+
       /* Pixie Double-Border Effect */
       border: 4px solid #000000;
-      box-shadow: 
-        inset 4px 4px 0px #ff79c6, 
+      box-shadow:
+        inset 4px 4px 0px #ff79c6,
         inset -4px -4px 0px #bd93f9,
         0px 12px 0px rgba(0, 0, 0, 0.4);
-      
+
       position: relative;
     }
 
     /* Pixie Menu Header */
     .menu-title {
-      color: #50fa7b; /* Retro Green */
+      color: #50fa7b;
+      /* Retro Green */
       font-size: 16px;
       text-align: center;
       margin-bottom: 24px;
@@ -72,11 +75,11 @@
       padding: 22px 16px;
       text-align: center;
       background: #44475a;
-      
+
       /* Pure CSS Pixel Border */
       border: 4px solid #000;
       box-shadow: inset -4px -4px 0px #282a36;
-      
+
       position: relative;
       cursor: pointer;
       user-select: none;
@@ -85,7 +88,8 @@
 
     /* Pixie Hover State (Chunky Feedback) */
     .menu-item a:hover {
-      background: #ffb86c; /* Bright retro orange */
+      background: #ffb86c;
+      /* Bright retro orange */
       color: #000;
       box-shadow: inset -4px -4px 0px #ff5555;
     }
@@ -106,19 +110,21 @@
     }
   </style>
 </head>
+
 <body>
 
   <!-- Pixie UI Menu Component -->
   <div class="menu-container">
     <h1 class="menu-title">Main Menu</h1>
-    
+
     <ul class="menu-list">
       <li class="menu-item"><a href="#start">Start Game</a></li>
-      <li class="menu-item"><a href="#load">Best scores</a></li>
+      <li class="menu-item"><a href="#scores">Best scores</a></li>
       <li class="menu-item"><a href="#options">Options</a></li>
       <li class="menu-item"><a href="#quit">Quit to Desktop</a></li>
     </ul>
   </div>
 
 </body>
+
 </html>
